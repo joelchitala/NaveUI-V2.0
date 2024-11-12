@@ -1,7 +1,7 @@
-import { runApp } from "./components/main.js";
-import { App } from "./components/sub_components/app.js";
-import { Widget } from "./components/sub_components/widget.js";
-import { popNavigator, pushNamed, pushNavigator } from "./components/ui_helpers.js";
+import { runApp } from "./naveui-V2_0/components/main.js";
+import { App } from "./naveui-V2_0/components/sub_components/app.js";
+import { Widget } from "./naveui-V2_0/components/sub_components/widget.js";
+import { popNavigator, pushNamed, pushNavigator } from "../naveui_V2_0/components/ui_helpers.js";
 
 const mount = document.querySelector('#mount');
 
@@ -20,7 +20,6 @@ const page_widget_3 = new Widget((self,body)=>{
 
 }, (self,body)=>{
     console.log("Destoried");
-    
 });
 
 runApp(mount,new App('/',
